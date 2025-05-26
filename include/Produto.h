@@ -4,8 +4,6 @@
 #include <string>
 #include "Data.h"
 
-using namespace std;
-
 class Produto
 {
 public:
@@ -18,26 +16,26 @@ public:
         INVALIDA, ALIMENTICIO, LIMPEZA, ELETRONICOS
     };
     Produto();
-    Produto(int idProduto, string nome, Data dataFabricacao, float preco, Categoria categoria, UnidadeMedida medida);
+    Produto(int idProduto, std::string nome, Data dataFabricacao, float preco, Categoria categoria, UnidadeMedida medida);
     ~Produto();
     int getIdProduto();
     void setIdProduto(int idProduto);
-    string getNome();
-    void setNome(string nome);
+    std::string getNome();
+    void setNome(std::string nome);
     Data getDataFabricacao();
     void setDataFabricacao(Data data);
     float getPreco();
     void setPreco(float preco);
-    string getDescricao();
+    std::string getDescricao();
     void setCategoria(Categoria categoria);
     Categoria getCategoria();
-    string getMedida();
+    std::string getMedida();
     void setUnidadeMedida(UnidadeMedida medida);
     //bool operator==(const Produto& outro);
 
 private:
     int idProduto;
-    string nome;
+    std::string nome;
     Data dataFabricacao;
     float preco;
     float quantia;

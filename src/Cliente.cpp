@@ -4,7 +4,7 @@ Cliente::Cliente()
 {
 
 }
-Cliente::Cliente(string cnpj, string razaoSocial, Endereco endereco, string telefone, string email)
+Cliente::Cliente(std::string cnpj, std::string razaoSocial, Endereco endereco, std::string telefone, std::string email)
 {
     setCnpj(cnpj);
     setRazaoSocial(razaoSocial);
@@ -16,36 +16,36 @@ Cliente::~Cliente()
 {
 
 }
-string Cliente::getCnpj()
+std::string Cliente::getCnpj()
 {
-    string cnpjFormatado;
+    std::string cnpjFormatado;
     return cnpjFormatado;
 }
-string Cliente::getRazaoSocial()
+std::string Cliente::getRazaoSocial()
 {
     return this->razaoSocial;
 }
-string Cliente::getEndereco()
+std::string Cliente::getEndereco()
 {
-    string enderecoStr = this->endereco.getRua() + "," + to_string( this->endereco.getNumero() ) + "-" + this->endereco.getBairro() +
+    std::string enderecoStr = this->endereco.getRua() + "," + std::to_string( this->endereco.getNumero() ) + "-" + this->endereco.getBairro() +
             "-" + this->endereco.getComplemento() + "." + this->endereco.getCidade() + "/" +  this->endereco.getEstado() +
             ". CEP: " + this->endereco.getCep();
     return enderecoStr;
 }
-string Cliente::getTelefone()
+std::string Cliente::getTelefone()
 {
-    string telefoneFormatado;
+    std::string telefoneFormatado;
     return telefoneFormatado;
 }
-string Cliente::getEmail()
+std::string Cliente::getEmail()
 {
     return this->email;
 }
-void Cliente::setCnpj(string cnpj)
+void Cliente::setCnpj(std::string cnpj)
 {
     this->cnpj = cnpj;
 }
-void Cliente::setRazaoSocial(string razaoSocial)
+void Cliente::setRazaoSocial(std::string razaoSocial)
 {
     this->razaoSocial = razaoSocial;
 }
@@ -53,15 +53,15 @@ void Cliente::setEndereco(Endereco endereco)
 {
     this->endereco = endereco;
 }
-void Cliente::setTelefone(string telefone)
+void Cliente::setTelefone(std::string telefone)
 {
     this->telefone = telefone;
 }
-void Cliente::setEmail(string email)
+void Cliente::setEmail(std::string email)
 {
     this->email = email;
 }
-string Cliente::getRua()
+std::string Cliente::getRua()
 {
     return endereco.getRua();
 }

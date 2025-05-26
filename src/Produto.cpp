@@ -5,7 +5,7 @@ Produto::Produto()
 
 }
 
-Produto::Produto(int idProduto, string nome, Data dataFabricacao, float preco, Categoria categoria, UnidadeMedida medida)
+Produto::Produto(int idProduto, std::string nome, Data dataFabricacao, float preco, Categoria categoria, UnidadeMedida medida)
 {
     this->idProduto = idProduto;
     this->nome = nome;
@@ -31,13 +31,13 @@ void Produto::setIdProduto(int idProduto)
 }
 
 
-string Produto::getNome()
+std::string Produto::getNome()
 {
     return this->nome;
 }
 
 
-void Produto::setNome(string nome)
+void Produto::setNome(std::string nome)
 {
     this->nome = nome;
 }
@@ -102,7 +102,7 @@ void Produto::setUnidadeMedida(UnidadeMedida medida)
     }
 }
 
-string Produto::getMedida()
+std::string Produto::getMedida()
 {
     switch(this->medida)
     {
@@ -126,7 +126,7 @@ string Produto::getMedida()
     }
 }
 
-string Produto:: getDescricao()
+std::string Produto:: getDescricao()
 {
     return this->nome + " - " + (char)this->quantia + " - R$ " + (char)this->preco;
 }

@@ -4,32 +4,30 @@
 #include <string>
 #include "Endereco.h"
 
-using namespace std;
-
 class Cliente
 {
 public:
     Cliente();
-    Cliente(string cnpj, string razaoSocial, Endereco endereco, string telefone, string email);
+    Cliente(std::string cnpj, std::string razaoSocial, Endereco endereco, std::string telefone, std::string email);
     ~Cliente();
-    string getCnpj();
-    string getRazaoSocial();
-    string getEndereco();
-    string getTelefone();
-    string getEmail();
-    void setCnpj(string cnpj);
-    void setRazaoSocial(string razaoSocial);
+    std::string getCnpj();
+    std::string getRazaoSocial();
+    std::string getEndereco();
+    std::string getTelefone();
+    std::string getEmail();
+    void setCnpj(std::string cnpj);
+    void setRazaoSocial(std::string razaoSocial);
     void setEndereco(Endereco endereco);
-    void setTelefone(string telefone);
-    void setEmail(string email);
-    string getRua();
+    void setTelefone(std::string telefone);
+    void setEmail(std::string email);
+    std::string getRua();
 
 private:
-    string cnpj;
-    string razaoSocial;
+    std::string cnpj;
+    std::string razaoSocial;
     Endereco endereco;
-    string telefone;
-    string email;
+    std::string telefone;
+    std::string email;
 };
 
 

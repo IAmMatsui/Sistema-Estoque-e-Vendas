@@ -12,11 +12,11 @@ int Venda::getIdVenda()
 {
     return this->idVenda;
 }
-void Venda::adicionarItem(ItemVenda item, vector<ItemVenda> lista)
+void Venda::adicionarItem(ItemVenda item, std::vector<ItemVenda> lista)
 {
     lista.push_back(item);
 }
-bool Venda::removerItem(ItemVenda item, vector<ItemVenda> lista)
+bool Venda::removerItem(ItemVenda item, std::vector<ItemVenda> lista)
 {
     /*for(int i=0; i < lista.size();i++)
     {
