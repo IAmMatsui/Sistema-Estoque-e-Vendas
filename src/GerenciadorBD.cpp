@@ -1,4 +1,4 @@
-#include "GerenciadorDB.h"
+#include "GerenciadorBD.h"
 
 QSqlDatabase BDManager::db;
 

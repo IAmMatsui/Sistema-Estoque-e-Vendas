@@ -1,6 +1,5 @@
-// BDManager.h
-#ifndef BDMANAGER_H
-#define BDMANAGER_H
+#ifndef GERENCIADORBD_H
+#define GERENCIADORBD_H
 
 #include "ObjetoBD.h"
 #include <QtSql>
@@ -21,4 +20,4 @@ public:
     static bool remove(const ObjetoDB& obj);
 };
 
-#endif // BDMANAGER_H
+#endif
