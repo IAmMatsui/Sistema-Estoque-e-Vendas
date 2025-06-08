@@ -1,5 +1,5 @@
-#ifndef OBJETODB_H
-#define OBJETODB_H
+#ifndef OBJETOBD_H
+#define OBJETOBD_H
 
 #include <QtSql>
 
