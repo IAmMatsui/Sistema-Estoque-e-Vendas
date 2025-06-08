@@ -1,8 +1,6 @@
 #ifndef DATA_H
 #define DATA_H
 
-using namespace std;
-
 class Data
 {
 public:

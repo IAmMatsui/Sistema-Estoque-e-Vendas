@@ -3,8 +3,6 @@
 
 #include <string>
 
-using namespace std;
-
 class Endereco
 {
 public:
@@ -15,31 +13,31 @@ public:
         RN, RS, RO, RR, SC, SP, SE, TO, ZZ
     };
     Endereco();
-    Endereco(string rua, int numero, string bairro, string complemento, string cidade, Estado estado, string cep);
+    Endereco(std::string rua, int numero, std::string bairro, std::string complemento, std::string cidade, Estado estado, std::string cep);
     ~Endereco();
-    void setRua(string rua);
+    void setRua(std::string rua);
     void setNumero(int numero);
-    void setBairro(string bairro);
-    void setComplemento(string complemento);
-    void setCidade(string cidade);
+    void setBairro(std::string bairro);
+    void setComplemento(std::string complemento);
+    void setCidade(std::string cidade);
     void setEstado(Estado estado);
-    void setCep(string cep);
-    string getRua();
+    void setCep(std::string cep);
+    std::string getRua();
     int getNumero();
-    string getBairro();
-    string getComplemento();
-    string getCidade();
-    string getEstado();
-    string getCep();
+    std::string getBairro();
+    std::string getComplemento();
+    std::string getCidade();
+    std::string getEstado();
+    std::string getCep();
 
 private:
-    string rua;
+    std::string rua;
     int numero;
-    string bairro;
-    string complemento;
-    string cidade;
+    std::string bairro;
+    std::string complemento;
+    std::string cidade;
     Estado estado;
-    string cep;
+    std::string cep;
 };
 
 
