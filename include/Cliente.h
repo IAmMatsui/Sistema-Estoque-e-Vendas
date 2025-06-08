@@ -32,6 +32,5 @@ private:
     string email;
 };
 
-
 #endif
 

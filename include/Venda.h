@@ -5,7 +5,6 @@
 #include "Data.h"
 #include <vector>
 
-
 class Venda
 {
 public:
@@ -24,9 +23,4 @@ private:
     Data dataVenda;
 };
 
-
-
-
-
 #endif
-
