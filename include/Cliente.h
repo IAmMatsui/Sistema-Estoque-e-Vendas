@@ -2,9 +2,11 @@
 #define CLIENTE_H
 
 #include <string>
+#include <QtSql>
 #include "Endereco.h"
+#include "ObjetoBD.h"
 
-class Cliente
+class Cliente: public ObjetoBD
 {
 public:
     Cliente();

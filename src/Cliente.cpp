@@ -4,6 +4,19 @@ Cliente::Cliente()
 {
 
 }
+
+Qstring& Cliente::getInsertQuery() {
+    return Qstring("INSERT INTO clientes (cnpj, razaoSocial) VALUES ('%1', '%2')").arg(this->cnpj).arg(this->razaoSocial);
+}
+
+Qstring& Cliente::getUpdateQuery() {
+    return Qstring("UPDATE clientes SET razaoSocial = '%1' WHERE cnpj = %2").arg(this->razaoSocial).arg(this->cnpj);
+}
+
+Qstring& Cliente::getDeleteQuery() {
+    return Qstring("DELETE FROM produtos WHERE id = %1").arg(this->cnpj);
+}
+
 Cliente::Cliente(std::string cnpj, std::string razaoSocial, Endereco endereco, std::string telefone, std::string email)
 {
     setCnpj(cnpj);

@@ -13,11 +13,11 @@ private:
 public:
     static bool conectar();
 
-    static bool insert(const ObjetoDB& obj);
+    static bool insert(const ObjetoBD& obj);
 
-    static bool update(const ObjetoDB& obj);
+    static bool update(const ObjetoBD& obj);
 
-    static bool remove(const ObjetoDB& obj);
+    static bool remove(const ObjetoBD& obj);
 };
 
 #endif

@@ -15,14 +15,14 @@ static bool GerenciadorBD::executarQuery(const QString& queryStr) {
     return true;
 }
 
-static bool GerenciadorBD::insert(const ObjetoDB& obj){
+static bool GerenciadorBD::insert(const ObjetoBD& obj){
     return executarQuery(obj.getInsertQuery());
 }
 
-static bool GerenciadorBD::update(const ObjetoDB& obj){
+static bool GerenciadorBD::update(const ObjetoBD& obj){
     return executarQuery(obj.getUpdateQuery());
 }
 
-static bool GerenciadorBD::remove(const ObjetoDB& obj){
+static bool GerenciadorBD::remove(const ObjetoBD& obj){
     return executarQuery(obj.getDeleteQuery());
 }

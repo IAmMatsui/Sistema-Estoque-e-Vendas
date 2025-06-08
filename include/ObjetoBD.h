@@ -1,11 +1,13 @@
 #ifndef OBJETODB_H
 #define OBJETODB_H
 
-class ObjetoDB{
+#include <QtSql>
+
+class ObjetoBD{
 public:
-    virtual void getInsertQuery() = 0;
-    virtual void getUpdateQuery() = 0;
-    virtual void getDeleteQuery() = 0;
+    virtual QString& getInsertQuery() = 0;
+    virtual QString& getUpdateQuery() = 0;
+    virtual QString& getDeleteQuery() = 0;
 };
 
 #endif
